@@ -1,0 +1,45 @@
+{
+    "plans": [
+      {
+        "name": "₹349 True 5G Unlimited Plan",
+        "validity": "28 Days",
+        "data": "2GB/day",
+        "voice": "Unlimited calls",
+        "sms": "100/day",
+        "additional_benefits": "Unlimited 5G data access"
+      },
+      {
+        "name": "₹198 True 5G Unlimited Plan",
+        "validity": "14 Days",
+        "data": "2GB/day",
+        "voice": "Unlimited calls",
+        "sms": "100/day",
+        "additional_benefits": "Unlimited 5G data access"
+      },
+      {
+        "name": "₹299 Prepaid Plan",
+        "validity": "28 Days",
+        "data": "2GB/day",
+        "voice": "Unlimited calls",
+        "sms": "100/day",
+        "additional_benefits": "Access to Jio apps"
+      },
+      {
+        "name": "₹599 Prepaid Plan",
+        "validity": "84 Days",
+        "data": "3GB/day",
+        "voice": "Unlimited calls",
+        "sms": "100/day",
+        "additional_benefits": "Access to Jio apps"
+      },
+      {
+        "name": "₹999 Prepaid Plan",
+        "validity": "84 Days",
+        "data": "3GB/day",
+        "voice": "Unlimited calls",
+        "sms": "100/day",
+        "additional_benefits": "Access to Jio apps"
+      }
+    ]
+  }
+  
