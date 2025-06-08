@@ -10,7 +10,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
 
 # Constants
-PERSIST_DIRECTORY = "chroma_db"
+PERSIST_DIRECTORY = "/tmp/chroma_db"
 VALID_EXTENSIONS = [".pdf", ".docx", ".json", ".csv"]
 
 # Components
