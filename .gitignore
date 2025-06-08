@@ -1,0 +1,39 @@
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# 📦 Virtual environments
+.venv/
+env/
+venv/
+
+# 📁 UV Python version and lock
+.python-version
+uv.lock
+
+# 🔐 Environment variables
+.env
+
+# 🧠 Vector store
+chroma_db/
+
+# 📄 Uploaded or ingested docs
+documents/
+*.pdf
+*.docx
+*.json
+*.csv
+
+# 🐳 Docker ignore
+.dockerignore
+
+# 🚫 Build artifacts
+*.log
+*.tmp
+*.bak
+
+# 💾 OS files
+.DS_Store
+Thumbs.db
