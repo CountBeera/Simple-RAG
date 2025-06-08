@@ -1,5 +1,5 @@
 # chatbot.py
-
+from ingest import ingest_folder
 import os
 from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings
@@ -8,10 +8,16 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 
 # constants
-PERSIST_DIRECTORY = "chroma_db"
+PERSIST_DIRECTORY = "/tmp/chroma_db"
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_API_BASE = "https://api.groq.com/openai/v1"
 MODEL_NAME = "meta-llama/llama-4-scout-17b-16e-instruct"
+
+if not os.path.exists(os.path.join(PERSIST_DIRECTORY, "index")):
+    print("📦 Vector DB not found. Ingesting documents...")
+    ingest_folder("documents")
+else:
+    print("✅ Vector DB already exists. Skipping ingestion.")
 
 # 1️⃣ Load embeddings & vectordb (from previous ingestion)
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")

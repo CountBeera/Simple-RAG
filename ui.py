@@ -45,6 +45,9 @@ if __name__ == "__main__":
     # Launch on localhost:7860 in dark mode
     # demo.launch()
     import os
+
+    from ingest import ingest_folder
+    ingest_folder("documents")
     port = int(os.environ.get("PORT", 7860))
     demo.launch(
         server_name="0.0.0.0",
